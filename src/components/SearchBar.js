@@ -3,7 +3,9 @@ import React from 'react';
 class SearchBar extends React.Component {
   state = { term: '' };
 
-  onFormSubmit = (e) => {};
+  onFormSubmit = (e) => {
+    e.preventDefault();
+  };
 
   render() {
     return (
